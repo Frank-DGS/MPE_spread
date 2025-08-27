@@ -143,70 +143,9 @@ train_cfg.total_timesteps = 20_000_000
 - `critic_hidden_sizes`: Critic网络隐藏层大小，默认(64, 64)
 - `activation`: 激活函数，默认"tanh"
 
-## 实验结果
-
-### 训练性能
-- 总训练episode: 133,334
-- 最终平均回报: -70.36
-- 最佳单次回报: -12.87
-- 整体平均回报: -68.47
-
-### 策略表现
-- 智能体学会了基本的协作策略
-- 能够有效避免相互碰撞
-- 实现了目标导向的移动行为
-- 在有限空间内进行协调
-
-## 项目特色
-
-### 1. 模块化设计
-- 清晰的代码结构，便于理解和修改
-- 独立的配置文件，方便参数调整
-- 可复用的网络组件
-
-### 2. 完整的训练流程
-- 从数据收集到模型更新的完整实现
-- 详细的日志记录和可视化
-- 自动化的模型保存和加载
-
-### 3. 学术严谨性
-- 遵循MAPPO论文的原始设计
-- 使用标准的强化学习技术
-- 包含详细的实验分析
-
-## 扩展方向
-
-### 算法改进
-- 引入注意力机制
-- 实现分层强化学习
-- 添加优先级经验回放
-
-### 任务扩展
-- 支持更多MPE任务
-- 扩展到连续动作空间
-- 增加智能体数量
-
-### 性能优化
-- 多GPU训练支持
-- 更高效的并行化
-- 内存优化
-
 ## 参考文献
 
 1. Yu, J., et al. "The Surprising Effectiveness of PPO in Cooperative Multi-Agent Games." NeurIPS 2021.
 2. Schulman, J., et al. "Proximal Policy Optimization Algorithms." arXiv preprint arXiv:1707.06347 (2017).
 3. Lowe, R., et al. "Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments." NeurIPS 2017.
 
-## 许可证
-
-本项目仅供学术研究使用。
-
-## 联系方式
-
-如有问题或建议，请通过以下方式联系：
-- 提交Issue
-- 发送邮件
-
----
-
-**注意**: 本项目基于PettingZoo的MPE环境，请确保正确安装了相关依赖包。
